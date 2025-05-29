@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Super Mario - Início Neon</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0f0f17;
+      color: #00fff7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff0000;
+      text-shadow:
+        0 0 5px #ff0000,
+        0 0 10px #ff0202,
+        0 0 20px #ff0000,
+        0 0 40px #ff0000;
+      margin-bottom: 20px;
+    }
+
+    .neon-text {
+      font-size: 1.5rem;
+      max-width: 700px;
+      margin-bottom: 40px;
+      color: #00f0ff;
+      text-shadow:
+        0 0 5px #00f0ff,
+        0 0 10px #00f0ff,
+        0 0 20px #00f0ff,
+        0 0 40px #00f0ff;
+      line-height: 1.6;
+      user-select: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .nav-links a {
+      padding: 14px 30px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: #fff;
+      background: #ff0000;
+      border-radius: 12px;
+      box-shadow:
+        0 0 5px #ff0000,
+        0 0 15px #ff0000,
+        0 0 30px #ff0057;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      user-select: none;
+    }
+
+    .nav-links a:hover {
+      background-color: #ff3399;
+      box-shadow:
+        0 0 10px #ff3399,
+        0 0 30px #ff3399,
+        0 0 60px #ff3399;
+    }
+
+    img.mario-img {
+      width: 300px;
+      border-radius: 20px;
+      box-shadow:
+        0 0 10px #00f0ff,
+        0 0 30px #00f0ff,
+        0 0 60px #00f0ff;
+      user-select: none;
+      margin-bottom: 30px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    img.mario-img:hover {
+      transform: scale(1.08);
+      box-shadow:
+        0 0 20px #00fff7,
+        0 0 60px #00fff7,
+        0 0 100px #00fff7;
+    }
+
+    footer {
+      color: #ff0057;
+      text-shadow:
+        0 0 5px #ff0057,
+        0 0 10px #ff0057,
+        0 0 20px #ff0057;
+      font-weight: 600;
+      margin-top: auto;
+      padding: 20px 0 0 0;
+      user-select: none;
+      font-size: 1rem;
+    }
+
+    .play-now {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .play-now a {
+      display: inline-block;
+      padding: 14px 40px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #fff;
+      background: #00f0ff;
+      border-radius: 12px;
+      box-shadow:
+        0 0 5px #00f0ff,
+        0 0 15px #00f0ff,
+        0 0 30px #00f0ff;
+      text-decoration: none;
+      user-select: none;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .play-now a:hover {
+      background-color: #33ffff;
+      box-shadow:
+        0 0 10px #33ffff,
+        0 0 30px #33ffff,
+        0 0 60px #33ffff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Super Mario - Ícone da Nossa Geração</h1>
+
+  <img
+    src="R.jpg"
+    alt="Mario"
+    class="mario-img"
+  />
+
+  <p class="neon-text">
+    Mario é um dos personagens mais icônicos dos videogames, criado pela Nintendo em 1981. Com seu visual simples, bigode e macacão vermelho, ele conquistou gerações com aventuras divertidas e inovadoras.
+    <br /><br />
+    Como um encanador corajoso, Mario enfrenta desafios para salvar a Princesa Peach do vilão Bowser, inspirando milhões de jogadores ao redor do mundo. Sua influência ultrapassa os jogos, tornando-se símbolo da cultura pop e da diversão que marcou nossa infância e adolescência.
+  </p>
+
+  <nav class="nav-links">
+    <a href="historia.html">História do Mario</a>
+    <a href="personagens.html">Personagens</a>
+    <a href="curiosidades.html">Curiosidades</a>
+  </nav>
+
+  <footer>Feito por: Carlos Daniel</footer>
+
+  <div class="play-now">
+    <a href="https://www.nintendo.com/games/detail/super-mario-3d-world-deluxe-switch/" target="_blank" rel="noopener noreferrer">
+      Jogue Agora - Entre no site para baixar o jogo
+    </a>
+  </div>
+
+</body>
+</html>
+<style>
+  /* ... seu estilo atual permanece */
+
+  .image-gallery {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .image-gallery img {
+    width: 200px;
+    border-radius: 15px;
+    box-shadow:
+      0 0 15px #00f0ff,
+      0 0 40px #00f0ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .image-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow:
+      0 0 30px #33ffff,
+      0 0 70px #33ffff;
+  }
+</style>
+
+<body>
+  <!-- resto do body -->
+
+  <img
+    src="eae.jpg"
+    alt="Mario"
+    class="mario-img"
+  />
+
+  <div class="image-gallery">
+    <img src="OIP.jpg" alt="Mario 1" />
+    <img src="OIP (1).jpg" alt="Mario 2" />
+    <img src="wallpapersden.com_poster-of-the-super-mario-bros-2023-movie_3840x2160.jpg" alt="Mario 3" />
+  </div>
+  <!-- resto do conteúdo continua -->
+</body>
